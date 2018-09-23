@@ -1,0 +1,34 @@
+Digital Signature is a process that guarantees that the contents of a message have not been altered in transit.
+When you, the server, digitally sign a document, you add a one-way hash (encryption) of the message content using your public and private key pair.
+Your client can still read it, but the process creates a "signature" that only the server's public key can decrypt. The client, using the server's public key, can then validate the sender as well as the integrity of message contents.
+if the transmission arrives but the digital signature does not match the public key in the digital certificate, then the client knows that the message has been altered.
+How does a Digital Signature Work?
+The digital signature can be considered as a numerical value that is represented as a sequence of characters. The creation of a digital signature is a complex mathematical process that can only be created by a computer.
+Consider a scenario where Alice has to digitally sign a file or an email and send it to Bob.
+1.	Alice selects the file to be digitally signed or clicks on 'sign' in her email application
+2.	The hash value of the file content or the message is calculated by Alice's computer
+3.	This hash value is encrypted with Alice's Signing Key (which is a Private Key) to create the Digital Signature.
+4.	Now, the original file or email message along with its Digital Signature are sent to Bob.
+5.	After Bob receives the signed message, the associated application (such as email application) identifies that the message has been signed. Bob's computer then proceeds to:
+•	Decrypt the Digital Signature using Alice's Public Key
+•	Calculate the hash of the original message
+•	Compare the (a) hash it has computed from the received message with the (b) decrypted hash received with Alice's message.
+6.	Any difference in the hash values would reveal tampering of the message.
+
+Certified Signatures
+Adding a certifying signature to a PDF document indicates that you are the author of the document and want to secure the document against tampering.
+Certified PDF documents display a unique blue ribbon across the top of the document. It contains the name of the document signer and the certificate issuer to indicate the authorship and authenticity of the document.
+Approval Signatures
+Approval signatures on a document can be used in your organization's business workflow. They help optimize your organization's approval procedure. The process involves capturing approvals made by you and other individuals and embedding them within the PDF document.
+Adobe allows signatures to include details such as an image of your physical signature, date, location, and official seal.
+Visible Digital Signatures
+These allow a single user or multiple users to digitally sign a single document. The signatures would appear on the document in the same way as signatures are applied on a physical document.
+Invisible Digital Signatures
+Documents with invisible digital signatures carry a visual indication of a blue ribbon in the task bar. You can use invisible digital signatures when you do not have to or do not want to display your signature, but you need to provide indications of the authenticity of the document, its integrity, and its origin.
+Symmetric encryption uses a single key that needs to be shared among the people who need to receive the message while asymmetrical encryption uses a pair of public key and a private key to encrypt and decrypt messages when communicating. Asymmetric encryption takes relatively more time than the symmetric encryption.
+A digital badge is a validated indicator of accomplishment, skill, quality, or interest that can be earned in many learning environments. Open digital badging makes it easy for anyone to issue, earn, and display badges across the web—through an infrastructure that uses shared and open technical technical standards.
+Secure Hash Algorithms : SHA-0 SHA-1 SHA-2 SHA-3
+The Advanced Encryption Standard, or AES, is a symmetric block cipher to protect classified information and is implemented in software and hardware throughout the world to encrypt sensitive data.
+AES comprises three block ciphers: AES-128, AES-192 and AES-256. 
+Pktool can be used to generate passphrase and symmetric key 
+
